@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MYRTEX</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20220412150153">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.css?_v=20220412150153">
+        <link rel="stylesheet" href="css/style.min.css?_v=20220412150153" />
+    </head>
+    <body>
+        <header>
+            <section class="header"></section>
+        </header>
+        <main>
+            <section class="app">
+                <div class="app__container container">
+                    <div class="app__row">
+                        <div class="app__sidebar app-sidebar"></div>
+                        <form action="" class="app__main app-main">
+                            <div class="app-main__head">
+                                <h1 class="app-main__title">Учебное заведение</h1>
+                                <button type="submit" class="app-main__save">Сохранить</button>
+                            </div>
+                            <div class="app-main__body">
+                                <div class="app-main__row">
+                                    <h6 class="app-main__name">Специальность</h6>
+                                    <div class="app-main__input input --half">                                        
+                                        <input type="text" placeholder="Введите текст">
+                                    </div>
+                                    <div class="app-main__checkbox checkbox --half">
+                                        <input id="university" type="checkbox">
+                                        <label for="university">Высшее учебное заведение Санкт-Петербурга</label>
+                                    </div>
+                                </div>
+                                <div class="app-main__row">
+                                    <h6 class="app-main__name">Заведение</h6>
+                                    <div class="app-main__input input">                                        
+                                        <input type="text" placeholder="Введите текст">
+                                    </div>
+                                </div>
+                                <div class="app-main__row">
+                                    <div class="app-main__checkbox checkbox">
+                                        <input id="magistracy" type="checkbox" checked>
+                                        <label for="magistracy">Магистратура учебного заведения</label>
+                                    </div>
+                                </div>
+                                <div class="app-main__row">
+                                    <h6 class="app-main__name">Ученые степени или звания</h6>
+                                    <div class="app-main__item app-item">
+                                        <a href="" class="app-item__delete"></a>
+                                        <div class="app-item__row">
+                                            <div class="app-item__column">
+                                                <span class="app-item__name --required">Ученая степень</span>
+                                                <div class="app-main__toggle toggle">
+                                                    <input id="toggle_1" type="checkbox" checked>
+                                                    <label for="toggle_1"></label>
+                                                </div>
+                                                <div class="app-main__input input">                                        
+                                                    <input type="text" placeholder="Введите текст" required>
+                                                    <span class="input__error">Поле обязательно для заполнения</span>
+                                                </div>
+                                            </div>
+                                            <div class="app-item__column">
+                                                <span class="app-item__name --required">Область</span>
+                                                <div class="app-main__input input --invalid">                                        
+                                                    <input type="text" placeholder="Введите текст" required>
+                                                    <span class="input__error">Поле обязательно для заполнения</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="app-main__add">Добавить</a>
+                                </div>
+                                <div class="app-main__row">
+                                    <h6 class="app-main__name">Ученые степени или звания</h6>
+                                    <div class="app-main__item app-item">
+                                        <a href="" class="app-item__delete"></a>
+                                        <div class="app-item__row">
+                                            <div class="app-item__column">
+                                                <span class="app-item__name --required">Ученая степень</span>
+                                                <div class="app-main__toggle toggle">
+                                                    <input id="toggle_2" type="checkbox">
+                                                    <label for="toggle_2"></label>
+                                                </div>
+                                                <div class="app-main__input input">                                        
+                                                    <input type="text" placeholder="Введите текст" required>
+                                                    <span class="input__error">Поле обязательно для заполнения</span>
+                                                </div>
+                                            </div>
+                                            <div class="app-item__column">
+                                                <span class="app-item__name">Область</span>
+                                                <div class="app-main__input input">                                        
+                                                    <input type="text" placeholder="Введите текст" required>
+                                                    <span class="input__error">Поле обязательно для заполнения</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="app-main__add --disabled">Добавить</a>
+                                </div>
+                                <div class="app-main__row">
+                                    <h6 class="app-main__name">Диапазон</h6>
+                                    <div class="app-main__slider slider">
+                                        <div class="slider__value --min"></div>
+                                        <div class="slider__line"></div>
+                                        <div class="slider__value --max"></div>
+                                    </div>
+                                </div>
+                                <div class="app-main__row">
+                                    <h6 class="app-main__name">Выбор темы</h6>
+                                    <div class="app-main__theme theme">
+                                        <a href="" class="theme__item --active" data-theme="light">Светлая</a>
+                                        <a href="" class="theme__item" data-theme="dark">Темная</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.js?_v=20220412150153"></script>
+    <script defer src="js/app.min.js?_v=20220412150153"></script>
+</html>
